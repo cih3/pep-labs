@@ -12,10 +12,10 @@ public class Parrot {
      * @return text.
      */
     public String copy(String text){
-        return "hello";
-    }/* 
-    public String pass (String test){
         return "polly";
-    }*/
+    }
+    public String pass (String text){
+        return text;
+    }
       
 }
