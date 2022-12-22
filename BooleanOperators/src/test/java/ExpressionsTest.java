@@ -120,8 +120,8 @@ public class ExpressionsTest {
     @Test
     public void returnOrTest3(){
         boolean input1 = false;
-        boolean input2 = true;
-        boolean expected = true;
+        boolean input2 = false;
+        boolean expected = false;
         boolean actual = e.returnOr(input1, input2);
         Assert.assertEquals(expected, actual);
     }
