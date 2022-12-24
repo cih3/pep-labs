@@ -20,7 +20,7 @@ public class BirdTest {
     @Test
     public void birdTest2(){
         Bird b1 = new Bird();
-        b1.ageMonths = 4;
+        b1.ageMonths = 3;
         String expected = "Chirp";
         String actual = b1.sound();
         Assert.assertEquals(expected, actual);
@@ -31,7 +31,7 @@ public class BirdTest {
     @Test
     public void birdTest3(){
         Bird b1 = new Bird();
-        b1.ageMonths = 3;
+        b1.ageMonths = 4;
         String expected = "Chirp";
         String actual = b1.sound();
         Assert.assertEquals(expected, actual);
