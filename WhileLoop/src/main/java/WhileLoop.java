@@ -42,11 +42,11 @@ public class WhileLoop {
   
     sum=sum+i;
     i=i+1;
-    //System.out.println(i);
+    
     
   } 
    return sum;
 
         
-    } 
+} 
 }
