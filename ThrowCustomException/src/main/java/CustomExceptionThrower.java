@@ -1,3 +1,4 @@
+import org.eclipse.jetty.http.HttpTester.Message;
 
 public class CustomExceptionThrower {
 
@@ -9,13 +10,16 @@ public class CustomExceptionThrower {
      * I recommend looking at the test case for a good example of try/catch block usage, as well.
      */
     public void throwCustomException()throws CustomException{
-        try {
-            testMethod();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-       
-    }
 
-    
+        int x= 9;
+        int y= 4;
+        if (x%2==0){
+            throw new CustomException();
+        } else if (y%2==0){
+            throw new CustomException();
+        }
+         
+        
+            }
+        
 }
