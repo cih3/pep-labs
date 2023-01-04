@@ -1,4 +1,5 @@
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -26,7 +27,7 @@ public class MapExercise {
      * so here Integer is a wrapper for int.
      */
     public Map<Integer, String> createMap(){
-        return null;
+        return new HashMap<Integer, String>();
     }
 
     /**
@@ -36,7 +37,9 @@ public class MapExercise {
      */
     public int getSize(Map<Integer,String> map){
 //        return total number of key/value pairs in the map
-        return 0;
+
+  
+return 0;
     }
 
     /**
@@ -47,6 +50,12 @@ public class MapExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void addKeyValuePair(Map<Integer,String> map, int key, String value){
+        HashMap<Integer, String> maps = new HashMap<Integer, String>();
+  
+        // Mapping string values to int keys
+      
+        maps.put(0, "  ");
+        // this is where i need help.
     }
 
     /**
@@ -56,7 +65,15 @@ public class MapExercise {
      * @return the value associated with key in map.
      */
     public String getValueFromKey(Map<Integer, String> map, int key){
-        return "";
+       
+        HashMap<Integer, String> hash_map = new HashMap<Integer, String>();
+  
+        // Mapping string values to int keys
+        hash_map.put(0, "Geeks");
+        hash_map.put(1, "Touchdown");
+       
+  
+        return "Geeks";
     }
 
     /**
