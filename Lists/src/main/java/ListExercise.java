@@ -30,8 +30,8 @@ public class ListExercise {
      * @return a List<Integer> object.
      */
     public List<Integer> createList(){
-      List<Integer> car= new ArrayList<Integer>();
-        return car;
+      return new ArrayList<Integer>();
+        
     }
 
     /**
@@ -41,7 +41,7 @@ public class ListExercise {
      * @return the size of List (number of items it holds.)
      */
     public int getSize(List<Integer> list){
-        list.add(2);
+        
         return 0;
     }
 
@@ -113,11 +113,10 @@ public class ListExercise {
      */
     public void updateAtPosition(List<Integer> list, int position, int value){
         ArrayList<Integer> brr = new ArrayList<Integer>();
-        brr.add(10);
-        brr.add(20);
-        brr.add(30);
-         
-        //update element of arraylist
-        brr.set(0, 11);
+        brr.add(0,1);
+        brr.add(1,2);
+        brr.set(1,3);
+        
+        
     }
 }
