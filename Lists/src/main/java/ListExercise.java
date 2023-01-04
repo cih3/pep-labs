@@ -30,7 +30,8 @@ public class ListExercise {
      * @return a List<Integer> object.
      */
     public List<Integer> createList(){
-        return null;
+      List<Integer> car= new ArrayList<Integer>();
+        return car;
     }
 
     /**
@@ -40,6 +41,7 @@ public class ListExercise {
      * @return the size of List (number of items it holds.)
      */
     public int getSize(List<Integer> list){
+        list.add(2);
         return 0;
     }
 
@@ -52,6 +54,15 @@ public class ListExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void addToList(List<Integer> list, int value){
+        ArrayList<Integer> List = new ArrayList<Integer>();
+  
+        
+        List.add(1);
+        List.add(2);
+        
+  
+       
+        System.out.println("ArrayList : " + List);
     }
 
     /**
@@ -67,8 +78,12 @@ public class ListExercise {
      * @return the int at the location in 'list' represented by 'index'.
      */
     public int get(List<Integer> list, int index){
+        List<Integer> arr = new ArrayList<>();
+         arr.add(1);
+        arr.add(2);
         
-        return 0;
+
+        return arr.get(1);
     }
 
     /**
@@ -81,7 +96,10 @@ public class ListExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void removeFromList(List<Integer> list, int position){
-
+        List<Integer> arr = new ArrayList<>();
+        arr.add(1);
+       
+        arr.remove(0); 
     }
 
     /**
@@ -94,5 +112,12 @@ public class ListExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void updateAtPosition(List<Integer> list, int position, int value){
+        ArrayList<Integer> brr = new ArrayList<Integer>();
+        brr.add(10);
+        brr.add(20);
+        brr.add(30);
+         
+        //update element of arraylist
+        brr.set(0, 11);
     }
 }
