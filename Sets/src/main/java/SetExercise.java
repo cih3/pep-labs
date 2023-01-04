@@ -34,9 +34,9 @@ public class SetExercise {
      * @return the size of set. (number of values)
      */
     public int getSize(Set<Integer> set){
-        HashSet<Integer> num = new HashSet<Integer>();
-       num.add(0);
-       return num.size();
+       
+       
+       return set.size();
     }
 
     /**
@@ -46,12 +46,11 @@ public class SetExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void addUniqueItem(Set<Integer> set, int item){
-        HashSet<Integer> numbers = new HashSet<Integer>();
+        
 
-    // Add values to the set
-    numbers.add(4);
-    numbers.add(7);
-    numbers.add(8);
+    
+    set.add(item);
+    
 
     }
 
@@ -63,12 +62,10 @@ public class SetExercise {
      */
     public void removeItem(Set<Integer> set, int item){
         
-            HashSet<Integer> numbers = new HashSet<Integer>();
+            
     
-    // Add values to the set
-        numbers.add(4);
-        numbers.add(7);
-        numbers.add(8);
-        numbers.remove(4);
+    
+        
+        set.remove(item);
     }
 }
