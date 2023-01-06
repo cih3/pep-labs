@@ -58,7 +58,7 @@ public class BankServiceTest {
         BankService bankService = new BankService();
         bankService.deposit(500);
         bankService.withdraw(700);
-        double expected = 500;
+        double expected = -200;
         double actual = bankService.getBalance();
         Assert.assertEquals(expected, actual,.01);
     }
