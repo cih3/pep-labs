@@ -35,7 +35,9 @@ public class BankService {
      */
     public void withdraw(double amount){
         
-       balance = balance - amount ;
+       if( balance >= amount){
+        balance-=amount;
+       } 
      
     }
 
