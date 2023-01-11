@@ -9,10 +9,12 @@ public class GetMax {
     public int max(int[] arr){
         
     int max = arr[0];
+
         
-        for(int i=1; i< arr.length; i++){
-            System.out.println(arr[i]);
-        }
-        return arr[max(arr)];
+        for(int i = 1; i < arr.length; i++)
+            if (arr[i] > max)
+                max = arr[i];
+        
+        return max;
     }
 }
