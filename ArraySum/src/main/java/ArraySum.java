@@ -11,12 +11,9 @@ public class ArraySum {
     public int sum(int[] arr){
         int sum = arr[0];
       
-        
+          for ( int i = 1; i < arr.length; i++)
+          sum = sum + arr[i]  ;
 
-        for ( int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
-            
-          }
-        return arr [sum(arr)];
+            return sum;
     }
 }
