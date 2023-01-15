@@ -1,0 +1,1 @@
+ SELECT COUNT(salary) FROM employee Where last_name = 'Smith';
