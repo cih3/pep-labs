@@ -9,4 +9,6 @@ GROUP BY Country;*/
 
 
 --SELECT COUNT(artist) song FROM song GROUP BY artist;
-SELECT COUNT() FROM song GROUP BY artist;
+--SELECT COUNT(song) FROM song GROUP BY artist;
+--SELECT artist COUNT(song) FROM song GROUP BY artist;
+SELECT artist COUNT(songs) AS song FROM song GROUP BY artist;
