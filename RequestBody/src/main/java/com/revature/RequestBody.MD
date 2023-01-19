@@ -89,6 +89,8 @@ app.post("/user", ctx -> {
     String jsonStringToBeReturned = om.writeValueAsString(user);
 
     //return the json string in the response body
+      
+     
     ctx.result(jsonStringToBeReturned);
 ```
 
