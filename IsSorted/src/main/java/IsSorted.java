@@ -7,13 +7,14 @@ public class IsSorted {
      * @return true if arr is sorted (all the numbers are in order). false if arr is not sorted.
      */
     public boolean checkSort(int[] arr){
-        boolean ball = false;
-        for(int i= 0; i <= arr.length; i++){
-            if(arr[i] > arr[i+1]){
-                return ball;
-                
-         
-}
+        //boolean ball = true;
+        for(int i= 0; i < arr.length-1; i++){
+            if (arr[i-1] < arr[i+1]){
+                return true;
+            }else{
+                return false;
+            }
+    }
             return false;
 }
 }
