@@ -29,12 +29,12 @@ public class Pyramid {
     public String returnPyramid(int n){
         
         String pyramid = "";
-        for(int i = 0; i < n; i++){
-            pyramid = pyramid +"\n";
-            }; 
-            for (int j = 0; j < n; j++){
-            pyramid = pyramid +"*"; 
+        for (int i = 1; i<=n; i++){
+            for (int j= 0; j < i; j++){
+                pyramid +="*";
             }
+            pyramid+="\n";
+        }
         
         return pyramid; 
     }
