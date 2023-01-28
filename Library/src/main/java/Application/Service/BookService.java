@@ -1,6 +1,7 @@
 package Application.Service;
 
 import Application.DAO.BookDAO;
+import Application.Model.Author;
 import Application.Model.Book;
 
 import java.util.List;
@@ -40,7 +41,7 @@ public class BookService {
      * @return all books.
      */
     public List<Book> getAllBooks() {
-        return null;
+        return bookDAO.getAllBooks();
     }
     /**
      * TODO: Use the bookDAO to persist a book to the database.
@@ -52,14 +53,14 @@ public class BookService {
      */
     public Book addBook(Book book) {
 
-        return null;
+        return bookDAO.getBookByIsbn(1);
     }
     /**
      * TODO: Use the bookDAO to retrieve a list of all books that have a bookCount above 0.
      * @return all available books (bookCount over zero)
      */
     public List<Book> getAllAvailableBooks() {
-        return null;
+        return bookDAO.getBooksWithBookCountOverZero();
     }
 
 }
