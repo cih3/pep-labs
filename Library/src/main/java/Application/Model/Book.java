@@ -39,7 +39,7 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public static int getAuthor_id() {
+    public  int getAuthor_id() {
         return author_id;
     }
 
