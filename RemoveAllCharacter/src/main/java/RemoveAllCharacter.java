@@ -1,3 +1,4 @@
+import kotlin.text.Regex;
 
 public class RemoveAllCharacter {
     /**
@@ -12,6 +13,9 @@ public class RemoveAllCharacter {
      * @return str, without any characters of type ch.
      */
     public String removeAll(String str, String ch){
-        return null;
+        
+        str = str.replaceAll(ch, "");
+       
+               return str;
     }
 }
