@@ -1,4 +1,8 @@
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class LargestSum {
@@ -9,14 +13,15 @@ public class LargestSum {
      * @param nums a list of ints.
      * @return the largest possible sum of separate numbers from nums.
      */
-    public int bigSum(List<Integer> nums){
+    public int bigSum(List<Integer> nums) {
         int sum = 0;
-        for (int i = 0; i <nums.size();i++){
-            sum= nums.get(nums.size()-1) + nums.get(nums.size()-2);
-        }
-		
+        List<Integer> check = new ArrayList<Integer>();
 
-    
+        for(int i= 0;i<nums.size(); i++){
+        sum = nums.get(nums.size()-1)+ nums.get(nums.size()-2);
+    }
+
+
     return sum;
         
        
