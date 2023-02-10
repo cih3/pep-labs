@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class SubArray {
     /**
@@ -13,7 +15,32 @@ public class SubArray {
      * @return a sub-array of nums containing the values between start and end.
      */
     public int[] sub(int[] nums, int start, int end){
-        
+      
+        for (int i = 0; i < start; i++) {
+            int currentSum = nums[i];
+ 
+            if (currentSum == end) {
+                System.out.println("Sum found at indexe "
+                                   + i);
+                return nums;
+            }
+            else {
+                // Try all subarrays starting with 'i'
+                for (int j = i + 1; j < start; j++) {
+                    currentSum += nums[j];
+ 
+                    if (currentSum == end) {
+                        System.out.println(
+                            "Sum found between indexes " + i
+                            + " and " + j);
+                        
+                    }
+      
+        }
+     
+    }
+}
         return nums;
     }
 }
+
