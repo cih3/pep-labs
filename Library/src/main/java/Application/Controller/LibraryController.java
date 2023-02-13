@@ -127,6 +127,8 @@ public class LibraryController {
         List<Book> books = bookService.getAllBooks();
         ctx.json(books);
     }
+    public List<Book> getAllBooks() {
+        return bookDAO.getAllBooks();
     /**
      * Handler to retrieve all books with a book count over zero. There is no need to change anything in this method.
      * @param context the context object handles information HTTP requests and generates responses within Javalin.
