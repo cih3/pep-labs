@@ -55,13 +55,18 @@ public class SampleClass {
     public int a;
     public boolean b;
 //    implement a custom .equals(SampleClass other){} method here.
-    public int equals(SampleClass other){
-        return a.equals();
-          
-         }
+
+    .equals(SampleClass){
+       ;
+    }
+
+       
+    
+     
 
     //    implement a custom .toString(){} method here.
-    public String toString(){
-        return b;
+
+    
     }
+    
 }
