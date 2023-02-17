@@ -22,7 +22,7 @@ public class GenericExercise<T> {
      * @param in an Object that will be of type T at runtime.
      */
     public void loadGenericItem(T in){
-        this.data = data; 
+        data =in ; 
         
     }
     /**
