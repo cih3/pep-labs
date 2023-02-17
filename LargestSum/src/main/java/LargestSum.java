@@ -14,17 +14,22 @@ public class LargestSum {
      * @return the largest possible sum of separate numbers from nums.
      */
     public int bigSum(List<Integer> nums) {
-        int sum = 0;
-        List<Integer> check = new ArrayList<Integer>();
-
-        for(int i= 0;i<nums.size(); i++){
-        sum = nums.get(nums.size()-1)+ nums.get(nums.size()-2);
-    }
-
-
-    return sum;
-        
+        int max = 0;
+        int secondMax = 0;
        
+
+        for(int value: nums){
+            if(value > max){
+                secondMax = max;
+                max = value;
+            }else if (value > secondMax && value <= max){
+                secondMax = value;
+            }
+        
+    }
+    return max+secondMax;
+
+
     }
    
 }
