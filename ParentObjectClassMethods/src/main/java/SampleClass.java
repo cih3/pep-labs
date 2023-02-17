@@ -61,11 +61,6 @@ public class SampleClass {
     }
 
     //    implement a custom .toString(){} method here.
-    int one = a;
-    boolean two =b; 
-        public boolean toString (boolean b){
-            
-        return b;
-    }
+    
     
 }
