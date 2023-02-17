@@ -18,16 +18,16 @@ public class WordCountMap {
 
     public Map<String, Integer> returnWordMap(String words){
         Map<String, Integer> hashMap = new HashMap<>();
-        String[] word = str.split(" ");{
-            for (String name : word){
-                Integer integer = hashMap.get(words);
+        String[] word = words.split(" ");{
+            for (String n : word){
+                Integer integer = hashMap.get(n);
                 if (integer == null)
-                hashMap.put(word, 1);
+                hashMap.put(n, 1);
                 else{
-                    hashMap.put(word, integer + 1);
+                    hashMap.put(n, integer + 1);
                 }
-                return hashMap;
-            }
+               }
+               return hashMap;
         }
     }
 }
